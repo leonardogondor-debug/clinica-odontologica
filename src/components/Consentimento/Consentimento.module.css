@@ -1,0 +1,19 @@
+/* Aviso de cookies fixo na parte de baixo da tela */
+.banner {
+  position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 60;
+  background: #fff; border: 1px solid var(--cinza-borda); border-radius: var(--raio);
+  box-shadow: 0 10px 30px rgba(10, 46, 92, 0.18); padding: 16px;
+  display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;
+}
+.banner a { color: var(--azul); font-weight: 600; }
+.acoes { display: flex; gap: 8px; justify-content: flex-end; }
+.aceitar, .recusar {
+  padding: 10px 18px; border-radius: 999px; font-weight: 700; cursor: pointer; font-size: 0.9rem;
+}
+.aceitar { background: var(--azul); color: #fff; border: 2px solid var(--azul); }
+.recusar { background: transparent; color: var(--azul); border: 2px solid var(--azul); }
+
+@media (min-width: 768px) {
+  .banner { max-width: 640px; left: 20px; right: auto; flex-direction: row; align-items: center; }
+  .acoes { flex-shrink: 0; }
+}

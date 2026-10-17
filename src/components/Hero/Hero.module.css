@@ -1,0 +1,23 @@
+.hero { background: linear-gradient(180deg, var(--azul-claro) 0%, #fff 100%); padding: 40px 0 56px; }
+.grade { display: grid; gap: 32px; align-items: center; }
+.selo {
+  display: inline-block; background: #fff; color: var(--verde-escuro); font-weight: 700;
+  padding: 6px 14px; border-radius: 999px; font-size: 0.85rem; margin-bottom: 16px;
+  border: 1px solid var(--cinza-borda);
+}
+.texto h1 { font-size: 2rem; margin-bottom: 16px; }
+.apresentacao { font-size: 1.05rem; margin-bottom: 24px; }
+.botoes { display: flex; flex-direction: column; gap: 12px; }
+.aviso { font-size: 0.8rem; margin-top: 18px; opacity: 0.85; }
+.imagem {
+  min-height: 260px; border-radius: 24px; display: grid; place-items: center; font-size: 6rem;
+  background: linear-gradient(135deg, var(--azul) 0%, var(--verde) 100%); box-shadow: var(--sombra);
+}
+
+@media (min-width: 768px) {
+  .hero { padding: 80px 0; }
+  .grade { grid-template-columns: 1.1fr 0.9fr; gap: 56px; }
+  .texto h1 { font-size: 3rem; }
+  .botoes { flex-direction: row; }
+  .imagem { min-height: 420px; }
+}

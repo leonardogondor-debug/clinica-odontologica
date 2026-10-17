@@ -1,0 +1,9 @@
+.lista { list-style: none; display: grid; gap: 16px; }
+.item {
+  display: flex; gap: 16px; align-items: flex-start; padding: 20px;
+  border-left: 4px solid var(--verde); background: var(--azul-claro); border-radius: 0 var(--raio) var(--raio) 0;
+}
+.icone { font-size: 1.8rem; }
+.item h3 { font-size: 1.1rem; margin-bottom: 4px; }
+
+@media (min-width: 768px) { .lista { grid-template-columns: repeat(2, 1fr); } }

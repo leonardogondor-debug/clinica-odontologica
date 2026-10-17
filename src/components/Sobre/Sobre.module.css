@@ -1,0 +1,16 @@
+.paragrafo { max-width: 720px; margin-bottom: 12px; }
+.subtitulo { margin: 32px 0 16px; font-size: 1.25rem; }
+.equipe { display: grid; gap: 16px; }
+.membro {
+  background: #fff; border-radius: var(--raio); padding: 24px; text-align: center;
+  border: 1px solid var(--cinza-borda);
+}
+.membro h4 { color: var(--azul-escuro); margin-top: 8px; }
+.foto {
+  width: 88px; height: 88px; margin: 0 auto; border-radius: 50%; display: grid; place-items: center;
+  font-size: 2.4rem; background: var(--azul-claro);
+}
+.cro { font-weight: 700; color: var(--verde-escuro); font-size: 0.9rem; margin-top: 4px; }
+.responsavel { margin-top: 24px; font-size: 0.9rem; }
+
+@media (min-width: 768px) { .equipe { grid-template-columns: repeat(3, 1fr); } }

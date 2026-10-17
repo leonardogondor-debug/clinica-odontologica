@@ -1,0 +1,16 @@
+.header {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--cinza-borda);
+}
+.barra { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 64px; }
+.logo { text-decoration: none; font-weight: 800; color: var(--azul-escuro); font-size: 1rem; }
+.menu { display: none; gap: 24px; font-weight: 600; font-size: 0.95rem; }
+.menu a { text-decoration: none; }
+.menu a:hover { color: var(--azul); }
+.cta { padding: 10px 20px; font-size: 0.9rem; }
+
+@media (min-width: 900px) {
+  .menu { display: flex; }
+  .logo { font-size: 1.1rem; }
+}

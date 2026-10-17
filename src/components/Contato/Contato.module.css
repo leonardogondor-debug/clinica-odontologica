@@ -1,0 +1,20 @@
+.grade { display: grid; gap: 32px; }
+.form {
+  background: #fff; border: 1px solid var(--cinza-borda); border-radius: var(--raio);
+  padding: 24px; display: grid; gap: 16px;
+}
+.form label { display: grid; gap: 6px; font-weight: 600; color: var(--azul-escuro); font-size: 0.95rem; }
+.form input, .form select, .form textarea {
+  font: inherit; padding: 12px 14px; border: 1px solid var(--cinza-borda); border-radius: 10px; width: 100%;
+}
+.form input:focus, .form select:focus, .form textarea:focus { outline: 3px solid var(--azul-claro); border-color: var(--azul); }
+.consentimento { display: flex !important; gap: 10px; align-items: flex-start; font-weight: 400 !important; font-size: 0.85rem !important; }
+.consentimento input { width: auto; margin-top: 4px; }
+.consentimento a { color: var(--azul); }
+.armadilha { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.sucesso { color: var(--verde-escuro); font-weight: 600; }
+.erro { color: #b3261e; font-weight: 600; }
+.canais { display: flex; flex-direction: column; gap: 12px; align-self: start; }
+.endereco { font-style: normal; background: #fff; border-radius: var(--raio); padding: 20px; border: 1px solid var(--cinza-borda); }
+
+@media (min-width: 900px) { .grade { grid-template-columns: 1.2fr 0.8fr; } }

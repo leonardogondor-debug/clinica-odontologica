@@ -1,0 +1,5 @@
+.pagina { padding: 40px 0 80px; max-width: 800px; margin: 0 auto; }
+.pagina h1 { font-size: 2rem; margin: 16px 0 4px; }
+.pagina h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+.data { font-size: 0.85rem; opacity: 0.8; }
+.voltar { color: var(--azul); font-weight: 700; text-decoration: none; }

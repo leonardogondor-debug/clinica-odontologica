@@ -1,0 +1,7 @@
+.lista { display: grid; gap: 12px; max-width: 760px; }
+.item { border: 1px solid var(--cinza-borda); border-radius: var(--raio); padding: 16px 20px; background: #fff; }
+.item summary { cursor: pointer; font-weight: 700; color: var(--azul-escuro); list-style: none; }
+.item summary::-webkit-details-marker { display: none; }
+.item summary::after { content: "+"; float: right; color: var(--azul); font-size: 1.3rem; line-height: 1; }
+.item[open] summary::after { content: "–"; }
+.item p { margin-top: 12px; }

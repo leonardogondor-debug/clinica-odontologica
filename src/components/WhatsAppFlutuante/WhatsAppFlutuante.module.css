@@ -1,0 +1,10 @@
+.botao {
+  position: fixed; right: 16px; bottom: 16px; z-index: 55;
+  width: 60px; height: 60px; border-radius: 50%; background: #25d366;
+  display: grid; place-items: center; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform .15s ease;
+}
+.botao:hover { transform: scale(1.08); }
+.botao:focus-visible { outline: 3px solid var(--azul); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) { .botao { transition: none; } }
